@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    < >
       <Navbar></Navbar>
+      <hr className='mt-4' />
     </>
   )
 }
