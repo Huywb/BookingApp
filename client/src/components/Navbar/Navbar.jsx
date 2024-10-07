@@ -5,7 +5,7 @@ import { MenuNav } from '../../utils/Data'
 
 const Navbar = () => {
   return (
-    <Container sx={{backgroundColor:"white",display:'flex',justifyContent:'space-between',alignItems:'center',paddingTop:'20px'}} >
+    <Box sx={{backgroundColor:"white",display:'flex',justifyContent:'space-between',alignItems:'center',paddingTop:'20px'}} >
         <Box className='-rotate-90 text-red-500' > 
           <Link to='/'className='w-10 h-10'>
             <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Typography className='absolute w-3 h-3 rounded-full right-2 bg-red-500'></Typography>
           </Box>
         </Box>
-    </Container>
+    </Box>
   )
 }
 
