@@ -73,3 +73,27 @@ export const CardImg = [
         url: img3
     }
 ]
+
+export const MenuSuppot = [
+    {
+        text: 'Popular'
+    },
+    {
+        text: 'Culture and Arts'
+    },
+    {
+        text: 'Outdoor'
+    },
+    {
+        text: 'Mountain'
+    },
+    {
+        text: 'Beach'
+    },
+    {
+        text: 'Category'
+    },
+    {
+        text: 'Things to experience'
+    },
+]
