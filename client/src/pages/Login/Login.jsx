@@ -10,10 +10,10 @@ const Login = () => {
               <Typography fontSize={30} fontWeight='bold'>Login</Typography>
               <Input sx={{padding:'5px',width:'80%'}} placeholder='Huypham@gmail.com' type='email' required></Input>
               <Input sx={{padding:'5px',width:'80%'}} placeholder='******' type='password' required></Input>
-              <Button type='submit' sx={{padding:'10px',width:'80%',bgcolor: '#d32f2f',borderRadius:'20px',color:'white'}}>Register</Button>
+              <Button type='submit' sx={{padding:'10px',width:'80%',bgcolor: '#d32f2f',borderRadius:'20px',color:'white'}}>Login</Button>
               <Box sx={{display:'flex',gap:1}}>
               <Typography sx={{opacity:.5}}>Not have a member?</Typography>
-              <Typography fontWeight={900} sx={{textDecoration:'underline'}}><Link to='/Register'>Login</Link></Typography>
+              <Typography fontWeight={900} sx={{textDecoration:'underline'}}><Link to='/Register'>Register</Link></Typography>
               </Box>
             </Box>
         </Box>

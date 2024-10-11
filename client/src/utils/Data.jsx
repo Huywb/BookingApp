@@ -6,6 +6,11 @@ import { GiBlockHouse } from "react-icons/gi";
 import { GiFamilyHouse } from "react-icons/gi";
 import { FaHouseMedicalFlag } from "react-icons/fa6";
 import { FaSnowboarding } from "react-icons/fa";
+import img1 from '../assets/1.png'
+import img2 from '../assets/2.png'
+import img3 from '../assets/3.png'
+
+
 export const MenuNav = [{
     text: 'Anywhere',
 },{
@@ -55,4 +60,16 @@ export const MenuList = [
         text: "Snow",
         url : '/snow'
     }        
+]
+
+export const CardImg = [
+    {
+        url: img1
+    },
+    {
+        url: img2
+    },
+    {
+        url: img3
+    }
 ]

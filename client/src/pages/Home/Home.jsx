@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import Menu from '../../components/Menu/Menu'
+import ListCard from '../../components/ListCard/ListCard'
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <hr className='mt-4' />
       <Menu></Menu>
         <Box>
-            abc
+            <ListCard></ListCard>
         </Box>
     </Box>
   )
