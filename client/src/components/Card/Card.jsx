@@ -6,33 +6,33 @@ import { AiFillHeart } from "react-icons/ai";
 import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
 
-const Card = () => {
+
+
+const Card = ({data}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [Like,setLike] = useState(false)
-
+  
 
   const handleLike = ()=>{
     setLike(!Like)
   }
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % CardImg.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.url.length);
   };
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? CardImg.length - 1 : prevIndex - 1
+      prevIndex === 0 ? data.url.length - 1 : prevIndex - 1
     );
   };
-  console.log(currentIndex)
-  console.log(-currentIndex*100)
   return (
     <Box  sx={{display:'flex',flexDirection:'column', gap:2}}>
       <Box sx={{ display: 'flex', width: '100%', overflow: 'hidden', position: 'relative' }}>
         <Box sx={{ display: 'flex', transition: 'transform 0.5s ease-in-out', transform: `translateX(-${currentIndex * 100}%)` }}>
-          {CardImg.map((item, index) => (
+          {data.url.map((item, index) => (
             <Box key={index} sx={{ minWidth: '100%'}}>
-              <img src={item.url} alt="card-item" style={{ width: '100%', height: '100%',borderRadius:'10px' }} />
+              <img src={item} alt="card-item" style={{ width: '100%', height: '100%',borderRadius:'10px' }} />
             </Box>
           ))}
         </Box>
@@ -53,11 +53,11 @@ const Card = () => {
         <Box sx={{flex:1,display:'flex',flexDirection:'column',gap:2,padding:1,cursor:'pointer',}}>
           <Box>
             <Box sx={{display:'flex',justifyContent:'space-between'}}>
-              <Typography fontWeight='bold'>Brallanda Sweden</Typography>
+              <Typography fontWeight='bold'>{data.name}</Typography>
               <Typography fontWeight='bold'>* 5.0</Typography>
             </Box>
-            <Typography sx={{opacity:.7}}>336kilometers away</Typography>
-            <Typography sx={{opacity:.7}}>Feb 5 - 10</Typography>
+            <Typography sx={{opacity:.7}}>{data.host}</Typography>
+            <Typography sx={{opacity:.7}}>{data.type}</Typography>
           </Box>
           <Box>
             <Typography fontWeight='bold'>4,211kr SEK night</Typography>

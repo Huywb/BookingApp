@@ -64,13 +64,55 @@ export const MenuList = [
 
 export const CardImg = [
     {
-        url: img1
+        id:0,
+        name: 'Canmore',
+        type: 'Pet Friendly Accommodation',
+        host: 'Marc Gene',
+        category: 'Popular',
+        url: 
+            [
+               img1
+            ,
+            
+                img2
+            ,
+            
+               img3
+            ]
     },
     {
-        url: img2
+        id:1,
+        name: 'Donkey',
+        type: 'Apartment for rent',
+        host: 'Benalmadena',
+        category: 'Popular',
+        url: 
+        [
+            img1
+        ,
+        
+            img2
+        ,
+        
+           img3
+        ]
     },
     {
-        url: img3
+        id:2,
+        name: 'Donkey',
+        type: 'Apartment for rent',
+        host: 'Benalmadena',
+        category: 'Culture and Arts',
+        url: 
+        [
+            img1
+        ,
+        
+            img2
+        ,
+        
+            img3
+        ]
     }
 ]
 
