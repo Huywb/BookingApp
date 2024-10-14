@@ -9,7 +9,9 @@ import { FaSnowboarding } from "react-icons/fa";
 import img1 from '../assets/1.png'
 import img2 from '../assets/2.png'
 import img3 from '../assets/3.png'
-
+import { IoIosPeople } from "react-icons/io";
+import { GrLike } from "react-icons/gr";
+import { CiCalendar } from "react-icons/ci";
 
 export const MenuNav = [{
     text: 'Anywhere',
@@ -169,4 +171,19 @@ export const FooterMenu = [{
         "Investor",
     ]
     }
+]
+
+export const HostProfile = [{
+        img: <IoIosPeople />,
+        text: "Perfect ratings from families",
+        description: "100% of families who have stayed here in the past year gave this property an overall 5-star rating."
+    },{
+        img: <GrLike />,
+        text: "Sungwon is a Superhost",
+        description: "Superhosts are experienced, highly rated hosts."
+    },{
+        img:<CiCalendar />,
+        text: "Free cancellation before October 29",
+        description: "Get a full refund if you change your plans."
+    },
 ]

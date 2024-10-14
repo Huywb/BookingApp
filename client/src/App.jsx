@@ -10,6 +10,7 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Footer from './pages/Footer/Footer'
 import Support from './components/Support/Support'
+import CardDetail from './components/CardDetail/CardDetail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
           <Route path="/:menu" element={<Filter></Filter>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
+          <Route path="/room/:id" element={<CardDetail></CardDetail>}></Route>
         </Routes>
       <hr className='m-10' />
       <Support></Support>

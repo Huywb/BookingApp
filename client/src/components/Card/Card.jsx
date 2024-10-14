@@ -5,6 +5,7 @@ import { CiHeart } from "react-icons/ci";
 import { AiFillHeart } from "react-icons/ai";
 import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
+import { Link } from 'react-router-dom';
 
 
 
@@ -50,6 +51,8 @@ const Card = ({data}) => {
           <GrFormNext size='30px'/>
         </Button>
       </Box>
+      <Link to={`/room/${data.id}`}>
+
         <Box sx={{flex:1,display:'flex',flexDirection:'column',gap:2,padding:1,cursor:'pointer',}}>
           <Box>
             <Box sx={{display:'flex',justifyContent:'space-between'}}>
@@ -63,6 +66,8 @@ const Card = ({data}) => {
             <Typography fontWeight='bold'>4,211kr SEK night</Typography>
           </Box>
         </Box>
+    </Link>
+
     </Box>
   )
 }
