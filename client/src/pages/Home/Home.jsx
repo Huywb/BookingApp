@@ -12,8 +12,6 @@ const Home = () => {
       <Box>
           <ListCard></ListCard>
       </Box>
-      <hr className='mt-20' />
-      <Support></Support>
     </Box>
   )
 }

@@ -139,3 +139,34 @@ export const MenuSuppot = [
         text: 'Things to experience'
     },
 ]
+
+
+export const FooterMenu = [{
+    text: "Suport",
+    type: [
+        "Help Center",
+        "AirCover",
+        "Anti-discrimination",
+        "Support for people with disabilities",
+        "Cancellation options",
+        "Neighborhood Concern Report",
+    ]},{
+    text: "Reception",
+    type: [
+        "Rent your home ",
+        "AirCover for Homeowners",
+        "Resources for hospitality",
+        "Community Forum",
+        "Responsible hospitality",
+        "Take a free course on the job of Hospitality"
+    ]
+    },{
+    text: "AboutUs",
+    type: [
+        "News page",
+        "New Features",
+        "Career opportunities",
+        "Investor",
+    ]
+    }
+]
