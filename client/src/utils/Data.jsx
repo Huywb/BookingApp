@@ -176,7 +176,7 @@ export const FooterMenu = [{
 export const HostProfile = [{
         img: <IoIosPeople />,
         text: "Perfect ratings from families",
-        description: "100% of families who have stayed here in the past year gave this property an overall 5-star rating."
+        description: "100% of families who have stayed here in the past year gave this property 5-star ."
     },{
         img: <GrLike />,
         text: "Sungwon is a Superhost",
@@ -186,4 +186,25 @@ export const HostProfile = [{
         text: "Free cancellation before October 29",
         description: "Get a full refund if you change your plans."
     },
+]
+
+export const Rules =[{
+    text: "House rules",
+    type: [
+        "Check-in: 14:00 – 21:00",
+       " Check out before 12:00",
+        " No smoking"
+    ]},{
+    text: "Safety and Accommodation",
+    type: [
+        "No smoke detector",
+        "Accommodation has security cameras outside the house",
+        "Lakes, rivers, other water sources nearby"
+    ]
+    },{
+    text: "Cancellation policy",
+    type: [
+        "Partial Refund: Get a refund for all nights booked 24 hours or more before you cancel. No refunds for service fees or costs for nights you've already stayed",
+        "See this Host's full policies for details"
+    ]}
 ]
