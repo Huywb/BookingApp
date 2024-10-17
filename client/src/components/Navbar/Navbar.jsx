@@ -50,7 +50,7 @@ const Navbar = () => {
             </svg>
             <Typography className='absolute w-3 h-3 rounded-full right-2 bg-red-500'></Typography>
             {show && 
-            <Box sx={{bottom: check ? '-70px' :'-70px',zIndex:10,borderRadius:'10px',marginTop:'50px',height:'fit-content',right:' 0px',top:'0',position:'absolute',borderRadius:'10px',display:'flex',bgcolor:'#eeeeee',flexDirection:'column', width:'120px'}}>
+            <Box sx={{bottom: check ? '-70px' :'-70px',zIndex:10,marginTop:'50px',height:'fit-content',right:' 0px',top:'0',position:'absolute',borderRadius:'10px',display:'flex',bgcolor:'#eeeeee',flexDirection:'column', width:'120px'}}>
               
               {user ? 
               <>
